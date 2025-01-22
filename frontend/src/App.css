@@ -1,3 +1,4 @@
+/* Estilos originais */
 .App {
   text-align: center;
 }
@@ -35,4 +36,150 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Novos estilos para a tabela */
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #282c34;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px; /* Adicionado espaçamento entre os botões */
+  width: 100%;
+  max-width: 400px; /* Para limitar o tamanho do grupo */
+  margin: 20px auto; /* Centraliza e adiciona espaçamento no topo */
+}
+
+.button-group button {
+  padding: 10px 20px; /* Botão maior para melhor usabilidade */
+  border-radius: 5px; /* Bordas arredondadas */
+  border: 0px; /* Adicionado espessura para a borda */
+  color: #000000; /* Cor do texto */
+  font-weight: bold; /* Texto em negrito */
+  font-size: 1rem; /* Ajuste no tamanho da fonte */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+  cursor: pointer; /* Indica que é clicável */
+}
+
+/* Estilo de hover */
+.button-group button:hover {
+  background-color: #ffffff; /* Cor de fundo mais clara ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+/* Estilo para telas menores */
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column; /* Empilha botões verticalmente */
+    align-items: center;
+    gap: 15px; /* Mais espaçamento para botões em coluna */
+  }
+
+  .button-group button {
+    width: 100%; /* Botões ocupam toda a largura do container */
+  }
+}
+
+/* Estilização do formulário e inputs */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o formulário horizontalmente */
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  max-width: 500px; /* Define uma largura máxima para o formulário */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Inputs e labels empilhados */
+  width: 100%; /* Inputs ocupam toda a largura do container */
+  margin-bottom: 15px;
+
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+
+  input {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  input:focus {
+    border-color: #666;
+    outline: none;
+  }
+}
+.table-container{
+  .button-table{
+    width: 200px;
+    justify-content: space-between;
+    display: flex;
+  }
+    button{ padding: 10px 20px; /* Botão maior para melhor usabilidade */
+      border-radius: 5px; /* Bordas arredondadas */
+      border: 0px; /* Adicionado espessura para a borda */
+      color: #000000; /* Cor do texto */
+      font-weight: bold; /* Texto em negrito */
+      font-size: 1rem; /* Ajuste no tamanho da fonte */
+      transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+      cursor: pointer; /* Indica que é clicável */
+    }
+
+/* Estilo de hover */
+ button:hover {
+  background-color: #ffffff; /* Cor de fundo mais clara ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento no tamanho */
+}
 }
